@@ -26,7 +26,7 @@
                 flat
                 dense
               >
-                <small>Ver perfil</small>
+                <small class="btnPerfil">Ver perfil</small>
               </q-btn>
             </div>
           </q-item-section>
@@ -52,7 +52,7 @@ export default {
   margin-top: 20px;
   margin-bottom: 13px;
 }
-small {
+.btnPerfil {
   margin-left: 41px;
 }
 </style>
