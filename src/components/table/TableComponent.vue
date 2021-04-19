@@ -12,12 +12,24 @@
     </thead>
     <tbody>
       <tr v-for="data in datas" :key="data">
-        <td class="number">{{data.number}}</td>
-        <td class="tasks">{{data.tasks}}</td>
-        <td class="date">{{data.deadLine}}</td>
-        <td class="site">{{data.site}}</td>
-        <td class="important">{{data.importance}}</td>
-        <td class="checkbox">{{data.checkbox}}</td>
+        <td class="number">
+          {{ data.number }}
+        </td>
+        <td class="tasks">
+          {{ data.tasks }}
+        </td>
+        <td class="date">
+          {{ data.deadLine }}
+        </td>
+        <td class="site">
+          {{ data.site }}
+        </td>
+        <td class="important">
+          {{ data.importance ? 'Obrigatorio' : 'Não obrigatorio' }}
+        </td>
+        <td class="checkbox">
+         <q-checkbox v-model="data.checkbox" />
+        </td>
       </tr>
     </tbody>
   </table>
@@ -77,13 +89,13 @@
   }
 
   table th {
-    background: #fff;
+    background: #969cb3;
 
     font-weight: normal;
     padding: 1rem 2rem;
 
     text-align: left;
-    color: #969cb3;
+    color: #fff;
   }
 
   table tr {
@@ -94,8 +106,8 @@
   }
 
   table td {
-    background: #fff;
+    background: #969cb3;
     padding: 1rem 2rem;
-    color: #969cb3;
+    color: #ffffff;
   }
 </style>

@@ -7,7 +7,6 @@
     components: {
       'table-component': () => import('../components/table/TableComponent.vue')
     }
-
   }
 </script>
 
