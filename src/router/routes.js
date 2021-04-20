@@ -7,7 +7,8 @@ const routes = [
       { path: '', component: () => import('pages/Index.vue') },
       { path: '/tasks', component: () => import('pages/PageTodo.vue') },
       { path: '/individualtasks', component: () => import('pages/PageTodoIndividual.vue') },
-      { path: '/perfil', component: () => import('pages/PagePerfil.vue') },
+      { path: '/personaltasks', component: () => import('src/pages/PageTodoPersonal.vue') },
+      { path: '/perfil', component: () => import('src/pages/PagePerfil.vue') },
 
     ]
   },
