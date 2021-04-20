@@ -3,6 +3,9 @@
 // * {
 //   background: #f0f2f5;
 // }
+body {
+  background: #f0f2f5;
+}
 
 .small-screen-only {
   @media (max-width: $breakpoint-xs-max) {
