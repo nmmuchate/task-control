@@ -19,8 +19,9 @@
         <div class="col-6 row justify-end ">
           <q-btn
             color="orange-5"
+            class="btnJob"
             icon="add_box"
-            label="Adicionar novo Trabalho"
+            label="Adicionar novo Job"
           />
         </div>
       </div>
@@ -35,5 +36,16 @@ export default {
 <style>
 .headerMd {
   margin-top: 31px;
+}
+strong,small{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+}
+
+.btnJob{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 10px;
 }
 </style>

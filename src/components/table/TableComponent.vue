@@ -19,7 +19,7 @@
           {{ data.tasks }}
         </td>
         <td class="date">
-          {{ data.deadLine }}
+          <small>{{ data.deadLine }}</small>
         </td>
         <td class="site">
           {{ data.site }}
@@ -89,13 +89,14 @@
   }
 
   table th {
-    background: #969cb3;
+    background: #ffffff;
 
+    font-family: 'Inter', sans-serif;
     font-weight: normal;
     padding: 1rem 2rem;
 
     text-align: left;
-    color: #fff;
+    color: #969cb3;
   }
 
   table tr {
@@ -106,8 +107,18 @@
   }
 
   table td {
-    background: #969cb3;
+    background: #ffffff;
     padding: 1rem 2rem;
-    color: #ffffff;
+    color: #969cb3;
+  }
+  .tasks{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #5A5A66;
+  }
+  .number{
+    font-family: 'IBM Plex Sans', sans-serif;
   }
 </style>
