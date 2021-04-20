@@ -28,7 +28,7 @@
         </q-tabs>
       </q-header>
     </div>
-    <div>
+    <div v-else>
       <q-header class="headerSCD">
         <header-second/>
       </q-header>

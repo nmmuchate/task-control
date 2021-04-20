@@ -1,22 +1,11 @@
 <template>
-  <table id="data-table">
-    <thead>
-      <tr>
-        <th>Nº</th>
-        <th>Actividades</th>
-        <th>Prazo</th>
-        <th>site</th>
-        <th>Importante</th>
-        <th></th>
-      </tr>
-    </thead>
     <tbody>
-      <tr v-for="data in datas" :key="data">
+      <tr>
         <td class="number">
           {{ data.number }}
         </td>
         <td class="tasks">
-          {{ data.tasks }}
+          {{ data.name }}
         </td>
         <td class="date">
           <small>{{ data.deadLine }}</small>
@@ -32,40 +21,15 @@
         </td>
       </tr>
     </tbody>
-  </table>
 </template>
 
 <script>
-  export default {
-    data(){
-      return {
-        datas: [
-          {
-            number: 1,
-            tasks: 'taskcontrol',
-            deadLine: '24/04/2021',
-            site: 'www.google.com',
-            importance: true,
-            checkbox: false
-          },
-          {
-            number: 2,
-            tasks: 'eCalloiro',
-            deadLine: '24/05/2021',
-            site: 'www.google.com',
-            importance: true,
-            checkbox: true
-          },
-          {
-            number: 3,
-            tasks: 'API de eCalloiro',
-            deadLine: '04/04/2021',
-            site: 'www.google.com',
-            importance: false,
-            checkbox: false
-          },
 
-        ]
+  export default {
+    props: ['data', 'id'],
+    computed: {
+      showTask() {
+        console.log('task::', this.tasks)
       }
     }
   }
